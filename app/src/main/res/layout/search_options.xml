@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#efeeee"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:showIn="@layout/home">
+    <Spinner
+        android:id="@+id/select_subsidiary"
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dropdown_small"
+        android:spinnerMode="dropdown" />
+    <Spinner
+        android:id="@+id/select_state"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dropdown_small"
+        android:spinnerMode="dropdown" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        style="?android:attr/buttonStyle"
+        android:background="#F3554A"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content">
+        <Button
+            style="@style/captionOnly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#FFFFFF"
+            android:drawableLeft="@drawable/search"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text="  Cari"
+            android:textAllCaps="false"/>
+    </FrameLayout>
+
+</LinearLayout>

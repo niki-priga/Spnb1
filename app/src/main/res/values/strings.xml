@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Spnb</string>
+    <string name="email">Email</string>
+    <string name="kata_laluan">Kata laluan</string>
+    <string name="Login">Hantar</string>
+    <string name="google_api_key">AIzaSyCF_ZT7zlcRGgYiKfL9OyAF-A_a98zD3Js</string>
+    <string name="registration_form_title">Borang Pendaftaran</string>
+    <string name="our_location">
+        Syarikat Perumahan Negara Berhad(444205-M)
+        Tingat 8, Wisma Perkeso, Jala Tun Razak, 50400
+        Kuala Lumpur.
+    </string>
+    <string name="our_location2">
+         Email us at aduan@spnb.com.my Or Call us on
+        1300-80-3838
+    </string>
+</resources>

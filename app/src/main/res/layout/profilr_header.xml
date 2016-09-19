@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+     android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#231E5D"
+        android:id="@+id/profile_header">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/editprofile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:background="@null"
+            android:padding="10dp"
+            android:src="@mipmap/ic_editoption" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_imageview"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_15dp"
+            android:src="@drawable/profile" />
+            <ImageButton
+                android:id="@+id/profile_camera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/profile_fullname"
+                android:layout_toRightOf="@+id/profile_imageview"
+                android:background="@null"
+                android:src="@android:drawable/ic_menu_camera"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/profile_fullname"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profile_imageview"
+                android:layout_centerHorizontal="true"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:drawablePadding="5dp"
+                android:drawableBottom="@drawable/line"
+                android:layout_marginBottom="5dp"
+                android:singleLine="true"
+                android:text="Full Name Goes Here"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/profile_ful"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profile_fullname"
+                android:layout_centerHorizontal="true"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:layout_marginBottom="30dp"
+                android:singleLine="true"
+                android:text="email goes here"
+                android:textColor="#EFB82D" />
+
+        </RelativeLayout>
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/margin_15dp"
+        android:layout_weight="0.6"
+        android:orientation="vertical">
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/NameTextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/NameEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nama"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textColor="#EFB82D" />
+            </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/emailTextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/emailEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                android:textColor="#EFB82D" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/genderTextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/genderEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Jenis Kelamin"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textColor="#EFB82D" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/mobilenumberTextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/mobilenumberEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Telefon"
+                android:inputType="phone"
+                android:singleLine="true"
+                android:textColor="#EFB82D" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/updateprofile"
+            style="@style/AppTheme.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hantar"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>
